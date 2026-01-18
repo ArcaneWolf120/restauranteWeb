@@ -1,0 +1,135 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ENCABEZADO */
+#encabezado {
+    background-color: #8b0000;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.mision h2 {
+    margin-top: 1.5rem;
+}
+
+/* EXCLUSIVOS */
+
+#proyectos {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.proyecto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACTOS */
+
+#contacto {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #a00000;
+}
+
+/* PIE DE PAGINA */
+
+#pie {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#pie a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+#pie a:hover {
+    text-decoration: underline;
+}
+
+/* DISEÑO RESPONSIVO */
+
+@media (min-width: 768px) {
+    #proyectos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    #proyectos h2 {
+        grid-column: 1 / -1;
+    }
+}
